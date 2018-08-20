@@ -2,7 +2,7 @@ const mysql=require('mysql')
 const connection=mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '',
+  password: 'd9xX0)=duxrR1',
   port: '3306',
   database: 'beetime' 
 })
