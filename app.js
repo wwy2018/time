@@ -1,5 +1,4 @@
 import {login,list,task,submit,update,taskover,allList} from './bee'
-require('./dog')
 const Koa=require('koa')
 const bodyParser=require('koa-bodyparser')
 const router=require('koa-router')()
