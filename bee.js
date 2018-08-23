@@ -41,8 +41,11 @@ async function submit(ctx){
 async function update(ctx){
   const body=ctx.request.body
   const alarm=Number(body.alarm)
+  const name=body.name
+  const times=body.time_s
+  const timee=body.time_e
   const id=body.id
-  const res = await db.queryDB(`update beelist set alarm=${alarm} where id=${id}`)
+  const res = await db.queryDB(`update beelist set alarm=${alarm}, name='${name}', time_s='${times}', time_e='${timee}' where id=${id}`)
   if (res) {
     ctx.body={error: 0}
   }

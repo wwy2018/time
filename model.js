@@ -3,6 +3,7 @@ const connection=mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'd9xX0)=duxrR1',
+  // password: '',
   port: '3306',
   database: 'beetime' 
 })
